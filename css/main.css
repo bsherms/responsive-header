@@ -36,6 +36,7 @@ h1 {
 }
 
 ul {
+  margin-bottom: 0;
   padding-left: 0;
   list-style-type: none;
   font-size: 1.125rem;
@@ -53,4 +54,21 @@ a {
 nav a:hover {
   background-color: #6c8fe0;
   color: #fff;
+}
+
+@media only screen and (min-width: 25em) {
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  li {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+
 }
